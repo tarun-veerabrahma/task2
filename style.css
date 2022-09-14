@@ -1,0 +1,155 @@
+body {
+	background-image: url("background.png");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.full {
+	width: 66.66667%;
+	position: relative;
+	/*background-color: black;
+	height: 1000px;*/
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.corner {
+	position: aboslute;
+	top: 0;
+	right: 0;
+	margin-right: 0;
+	margin-left: auto;
+	background-color: rgba(22, 44, 65,0.7);
+	width: fit-content;
+	height: fit-content;
+}
+.link{
+	text-decoration: none;
+}
+.corner ul {
+	display: flex;
+	font-size: 10px;
+	margin: 0;
+	padding: 0px 3px;
+	list-style-type: none;
+}
+.corner li.item {
+	padding: 3px 6px;
+}
+.corner li.separator {
+	border-left: 1px solid rgb(165, 203, 252);
+	height: 10px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+.corner ul li a {
+	color: white;
+}
+
+.main {
+	position: relative;
+}
+.logo {
+	height: fit-content;
+	position: absolute;
+	top: 0;
+	left: 20px;
+	z-index: 3;
+}
+
+.boxout {
+	position: absolute;
+	background-color: rgba(22, 44, 68, 0.9);
+	width: 100%;
+	top: 38px;
+	padding: 4px;
+	height: fit-content;
+}
+.boxin {
+	position: relative;
+	border: 1px solid rgb(63, 80, 100);
+	height: 56px;
+	width: 100%;
+}
+.mainNav {
+	position: absolute;
+	top: 10px;
+	left: 222px;
+}
+.mainNav ul.navs {
+	display: flex;
+	font-size: 16px;
+	margin: 0;
+	list-style-type: none;
+}
+.mainNav li.item {
+	padding: 5px 18px;
+}
+.mainNav li.separator {
+	border-left: 1px solid white;
+	height: 14px;
+	margin-top: 11px;
+	margin-bottom: 7px;
+}
+.mainNav ul li a {
+	color: rgb(192, 217, 239);
+}
+
+.home {
+	position: absolute;
+	top: 102px;
+	width: 100%;
+	padding-top: 35px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 35px;
+	color: white;
+	background-color: rgba(22, 44, 68, 0.25);
+}
+.title {
+	font-family: Colville Regular;
+}
+.out {
+	position: absolute;
+	top: 276px;
+	padding: 4px;
+	width: 100%;
+	background-color: rgba(20, 37, 63, 0.9);
+}
+.content{
+	padding: 11px;
+	color: white;
+	font-size: 14px;
+	border: 1px solid rgb(63, 80, 100);
+}
+.content div.col{
+	padding: 15px;
+}
+.content img{
+	margin-bottom: 20px;
+	max-width: 100%;
+	max-height: 100%;
+}
+.content div a{
+	color: rgb(192, 217, 239);
+}
+
+.footer {
+	position: absolute;
+	top: 820px;
+	width: 100%;
+	display: flex;
+	background-color: rgba(22, 44, 65,0.7);
+	padding: 5px;
+	justify-content: center;
+	color: rgb(160, 176, 210);
+}
+.footer a{
+	padding: 0px 5px;
+	color: white;
+}
+.footer a.separator {
+	padding: 0;
+}

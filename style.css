@@ -8,18 +8,13 @@ body {
 .full {
 	width: 66.66667%;
 	position: relative;
-	/*background-color: black;
-	height: 1000px;*/
 	margin-right: auto;
 	margin-left: auto;
-	margin-top: 0;
-	margin-bottom: 0;
+	height: fit-content;
+	font-family: Arial;
 }
 
 .corner {
-	position: aboslute;
-	top: 0;
-	right: 0;
 	margin-right: 0;
 	margin-left: auto;
 	background-color: rgba(22, 44, 65,0.7);
@@ -35,6 +30,7 @@ body {
 	margin: 0;
 	padding: 0px 3px;
 	list-style-type: none;
+	align-items: center;
 }
 .corner li.item {
 	padding: 3px 6px;
@@ -42,8 +38,6 @@ body {
 .corner li.separator {
 	border-left: 1px solid rgb(165, 203, 252);
 	height: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
 }
 .corner ul li a {
 	color: white;
@@ -55,28 +49,30 @@ body {
 .logo {
 	height: fit-content;
 	position: absolute;
-	top: 0;
+	top: -42px;
 	left: 20px;
 	z-index: 3;
 }
 
 .boxout {
-	position: absolute;
+	margin-top: 45px;
 	background-color: rgba(15, 31, 54, 0.9);
 	width: 100%;
 	top: 38px;
 	padding: 4px;
-	height: fit-content;
 }
 .boxin {
 	border: 1px solid rgb(63, 80, 100);
 	height: fit-content;
 	width: 100%;
-	padding: 10px 0px;
+	padding: 10px 5px;
+	display: flex;
+	justify-content: right;
 }
 .mainNav {
 	display: flex;
 	justify-content: right;
+	font-family: Calibri;
 }
 .mainNav ul.navs {
 	display: flex;
@@ -85,7 +81,7 @@ body {
 	list-style-type: none;
 }
 .mainNav li.item {
-	padding: 5px 18px;
+	padding: 5px 15px;
 }
 .mainNav li.separator {
 	border-left: 1px solid white;
@@ -104,32 +100,24 @@ body {
 	color: rgb(255, 255, 255);
 }
 
-.home {
-	position: absolute;
-	top: 102px;
+.title {
+
 	width: 100%;
-	padding-top: 35px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 25px;
+	padding: 35px 30px 25px 30px;
 	color: white;
 	background-color: rgba(22, 44, 68, 0.25);
+	font-family: "Bahnschrift light";
+	/*font-weight: 100;*/
+	letter-spacing: 5px;
 }
-.title {
-	font-family: Ubuntu;
-}
-.out {
-	position: absolute;
-	top: 266px;
-	padding: 4px;
-	width: 100%;
-	background-color: rgba(15, 31, 54, 0.9);
-}
+
 .content{
-	padding: 11px;
+	padding: 15px;
 	color: white;
 	font-size: 14px;
-	border: 1px solid rgb(63, 80, 100);
+	outline: 1px solid rgb(63, 80, 100);
+	outline-offset: -6px;
+	background-color: rgba(15, 31, 54, 0.9);
 }
 .row >*{
 	padding: 15px;
@@ -144,8 +132,7 @@ body {
 }
 
 .ourServices{
-	position: relative;
-	top: 142px;
+	margin-top: 50px;
 	padding: 4px;
 	width: 100%;
 	background-color: rgba(15, 31, 54, 0.9);
@@ -162,10 +149,10 @@ body {
 }
 .leftBelow{
 	padding: 10px;
-	border-top: 1px solid rgb(90, 106, 129);
+	border-top: 1px solid rgb(90, 106, 129) ;
 	border-bottom: 1px solid rgb(90, 106, 129);
 }
-.leftBelow a{
+.ourServices a{
 	color: rgb(204, 221, 236);
 }
 .ourServices .row .right {
@@ -196,28 +183,8 @@ button .arrow {
 	font-weight: 700;
 	padding-left: 4px;
 }
-.oS {
-	position: absolute;
-	top: 700px;
-	width: 100%;
-	display: flex;
-	background-color: rgba(22, 44, 65,0.7);
-	padding: 5px;
-	justify-content: center;
-	color: rgb(160, 176, 210);
-}
-.oS a{
-	padding: 0px 5px;
-	color: white;
-}
-.oS a.separator {
-	padding: 0;
-}
-
-
 .footer {
-	position: absolute;
-	top: 840px;
+	margin-top: 10px;
 	width: 100%;
 	display: flex;
 	background-color: rgba(22, 44, 65,0.7);
@@ -231,4 +198,7 @@ button .arrow {
 }
 .footer a.separator {
 	padding: 0;
+}
+.hide {
+	display: none;
 }
